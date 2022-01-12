@@ -1,0 +1,27 @@
+//Primero que todo comprobamos la instalacion de python
+python --version
+//segundo comprovamos la instalacion de pip
+pip --version
+
+//despues instalamos 
+pip install virtualenv
+//esto es para crear entorno virtuales como lo mismo que realiza anaconda
+// si que remso crear el entorno virtual devempos hacerlo en la carpeta del proyecto creado con django
+python -m virtualenv venv
+// activamos el entorno
+activate
+//ahora instalamos django
+pip install django
+//para comprobar que todo este ok escribimos 
+django-admin
+//mostrara lsos comandos 
+// para inciar un proyecto con dhango devemos crearlo
+django-admin startproject django_password_generator .
+code .
+//espara activar entorno virtual
+
+//para correr server
+python manage.py runserver
+
+//crear aplicacion se crea varia subdiviciones "generator" es solo el nombre de la app
+python manage.py startapp generator
